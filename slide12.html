@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nuralac_Detailer_First_Release</title>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="keywords"
+      content="css animation, animation, css3, webkit, mozilla, w3c, dan eden, @_dte, animated, animate.css, dan eden"
+    />
+    <meta name="viewport" content="initial-scale = 1.0, user-scalable = yes, maximum-scale = 2.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <!-- Css files -->
+    <link rel="stylesheet" href="css/s12_style.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <!-- JS files -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/s12_links.js"></script>
+    <script type="text/javascript" src="js/insert.js"></script>
+    <script type="text/javascript" src="js/swip/jquery-ui-1.9.2.custom.min.js"></script>
+    <script type="text/javascript" src="js/swip/jquery.touchSwipe.js"></script>
+    <script type="text/javascript" src="js/swip/jquery.touchSwipe.min.js"></script>
+    <script type="text/javascript" src="js/fit.js"></script>
+
+    <script type="text/javascript" id="customs-js">
+      $(document).ready(function () {
+        $("#img1").insert("drawLine", "0", "6");
+        $("#img2").insert("fadeIn", "3", "1");
+        $("#img3").insert("fadeIn", "0", "6");
+        // my images
+        $("#my-img1").insert("drawLine", "0", "6");
+        $("#my-img2").insert("fadeIn", "2", "1");
+        $("#my-img3").insert("fadeIn", "3", "6");
+      });
+    </script>
+    <link rel="stylesheet" href="./css/media.css" />
+  </head>
+
+  <body>
+    <div id="Main_Container" class="page12">
+      <!-- main slide -->
+      <img src="./images/s1/full-screen.png" id="full-screen" />
+      <!-- tabs -->
+      <div class="links">
+        <a href="index.html"> <div id="home"></div></a>
+        <a href="slide2.html"> <div id="div1"></div></a>
+        <a href="slide5.html"> <div id="div2"></div></a>
+        <a href="slide8.html"> <div id="div3"></div></a>
+        <a href="slide11.html"> <div id="div4"></div></a>
+        <a href="slide12.html"> <div id="div5"></div></a>
+      </div>
+      <!-- end of tabs -->
+      <div class="logo">
+        <img id="img-logo1" class="img-logo1" src="images/s1/img1.png" />
+        <img id="img-logo2" class="img-logo2" src="images/s1/img2.png" />
+        <div id="img-logo3" class="img-logo3"></div>
+        <img id="img-logo4" class="img-logo4" src="images/s1/img4.png" />
+      </div>
+      <div class="images-page12">
+        <div id="img1"></div>
+        <img id="img2" src="images/s12/img2.png" />
+        <img id="img3" src="images/s12/img3.png" />
+      </div>
+      <div id="my-img1"></div>
+      <div class="my-images-page12">
+        <img id="my-img2" src="images/s12/img2.png" />
+        <img id="my-img3" src="images/s12/img3.png" />
+      </div>
+      <!-- main slide -->
+    </div>
+    <script type="application/javascript">
+      $(document).ready(function (e) {
+        $("#my-img1").swipe({
+          swipeLeft: function (event, direction, distance, duration, fingerCount) {
+            window.location = "#";
+          },
+          swipeRight: function (event, direction, distance, duration, fingerCount) {
+            window.location = "slide11.html";
+          },
+        });
+      });
+    </script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
