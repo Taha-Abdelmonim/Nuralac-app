@@ -55,12 +55,16 @@ html {
   width: 100%;
 }
 body::before {
-  background: url(../images/s6/text3.png) no-repeat !important;
-  bottom: 19% !important;
+  content: "HMOs: Human milk oligosaccharides; 2’-FL: 2’Fucosyllactose. \a 1. Hegar B, Wibowo Y, Basrowi RW, et al. The Role of Two Human Milk Oligosaccharides, \a  2′-Fucosyllactose and Lacto-N-Neotetraose, in Infant Nutrition. Pediatr Gastroenterol Hepatol Nutr. 2019;22(4):330-340." !important;
+  white-space: pre-wrap;
+  background: none !important;
+  font-weight: bold;
+  color: #000;
+  font-size: 10px;
 }
 @media (min-width: 577px) and (max-width: 992px) {
   body::before {
-    bottom: 13% !important;
+    bottom: 6% !important;
   }
 }
 body {

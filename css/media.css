@@ -53,49 +53,6 @@
     margin-top: -4%;
   }
 }
-.alert,
-.end-alert {
-  width: 80%;
-  text-align: center;
-  font-size: 25px;
-  font-weight: bold;
-  background: #3888ff;
-  transition: 1s;
-  padding: 15px;
-  border-radius: 10px;
-  transform: translateX(-50%);
-  left: 50%;
-  top: -10%;
-  position: absolute;
-}
-
-.alert {
-  color: white;
-}
-
-.end-alert {
-  color: black;
-}
-
-.full-screen .alert {
-  animation: alert 4s alternate;
-}
-
-.page1:not(.full-screen) .end-alert {
-  animation: alert 4s alternate;
-}
-
-@keyframes alert {
-  0% {
-    top: -10%;
-  }
-  50% {
-    top: 15%;
-  }
-  100% {
-    top: -10%;
-  }
-}
 @media (max-width: 992px) {
   ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
@@ -122,8 +79,7 @@
 
   :root,
 body {
-    overflow-y: clip;
-    overflow-x: clip;
+    overflow-x: clip !important;
   }
 
   body {
@@ -194,7 +150,7 @@ body {
     height: 11%;
     background: url(../images/s1/img6.png) no-repeat;
     background-size: 100%;
-    bottom: 10%;
+    bottom: 64px;
     right: 0%;
   }
   body #Main_Container .logo {
@@ -324,7 +280,7 @@ body .page2 .my-analysis-circle .con1 div {
     left: 4%;
     top: -7%;
     height: 51px;
-    width: 100%;
+    width: 80%;
     z-index: 1;
   }
   body .page4 .images-page4 {
@@ -433,17 +389,19 @@ body .page2 .my-analysis-circle .con1 div {
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 41vh;
+    height: 40vh;
     overflow-y: scroll;
     border-bottom: 2px solid #0696cd;
     align-items: center;
+    justify-content: space-between;
   }
   body .page6 #my-img7 {
     position: absolute;
-    bottom: 26.5%;
+    bottom: 28.8%;
     left: 50%;
     transform: translateX(-50%);
     width: 60%;
+    height: 28px;
   }
   body .page6 .button2 {
     display: none;
@@ -476,17 +434,17 @@ body .page2 .my-analysis-circle .con1 div {
   body .page7 .my-images-page7 > img:nth-of-type(3) {
     width: 75%;
     position: absolute;
-    bottom: -4%;
+    bottom: -17%;
     left: 11.8%;
   }
   body .page7 .my-images-page7 > div > img:nth-of-type(1) {
-    width: 43%;
+    width: 32%;
   }
   body .page7 .my-images-page7 > div > img:nth-of-type(2) {
     width: 15%;
   }
   body .page7 .my-images-page7 > div > img:nth-of-type(3) {
-    width: 43%;
+    width: 32%;
   }
   body .page8 .images-page8 {
     display: none;
@@ -608,7 +566,7 @@ body .page9 .images-page9 {
     margin-bottom: -240px;
   }
   body .page10 .my-images-page10 > img:nth-of-type(5) {
-    margin-top: 15%;
+    margin-top: 17%;
   }
   body .page10 .my-images-page10 > img:nth-of-type(6) {
     display: none;
@@ -676,10 +634,14 @@ body .page9 .images-page9 {
   }
 }
 @media (min-width: 577px) and (max-width: 992px) {
+  body {
+    overflow-y: scroll;
+    height: 120vh !important;
+  }
   body::before {
     background: url(../images/s1/text-global2.png) no-repeat;
     background-size: 80% 80%;
-    bottom: 15%;
+    bottom: 10%;
   }
   body::after {
     top: 3%;
@@ -695,6 +657,7 @@ body .page9 .images-page9 {
     left: 50% !important;
     transform: translateX(-50%);
     width: 340px !important;
+    bottom: 0;
   }
   body #Main_Container #full-screen {
     top: 30% !important;
@@ -707,9 +670,10 @@ body .page9 .images-page9 {
     left: 0;
   }
   body #Main_Container .links::after {
-    bottom: -1% !important;
+    bottom: -5% !important;
     width: 13% !important;
-    height: 32% !important;
+    height: 20% !important;
+    right: 3%;
   }
   body #Main_Container .links a div {
     top: auto;
@@ -719,13 +683,13 @@ body .page9 .images-page9 {
     z-index: 1;
   }
   body #Main_Container .links a:nth-of-type(1) div {
-    left: 21%;
+    left: 22%;
   }
   body #Main_Container .links a:nth-of-type(2) div {
-    left: 30%;
+    left: 31%;
   }
   body #Main_Container .links a:nth-of-type(3) div {
-    left: 39%;
+    left: 40%;
   }
   body #Main_Container .links a:nth-of-type(4) div {
     left: 48.5%;
@@ -734,7 +698,7 @@ body .page9 .images-page9 {
     left: 57.8%;
   }
   body #Main_Container .links a:nth-of-type(6) div {
-    left: 67%;
+    left: 66%;
   }
   body #Main_Container div.links.full-screen::after {
     bottom: -9% !important;
@@ -829,17 +793,18 @@ body .page9 .images-page9 {
 
   .page3 .my-images-page3 {
     flex-direction: row !important;
+    top: 28% !important;
   }
   .page3 .my-images-page3 div:nth-of-type(1) {
     background: url(../images/s3/img1.png) no-repeat !important;
-    top: -36% !important;
+    top: -42% !important;
     left: 1% !important;
   }
   .page3 .my-images-page3 div:nth-of-type(2) {
     background: url(../images/s3/img2.png) no-repeat !important;
     background-size: 100% !important;
     left: 1% !important;
-    top: 2% !important;
+    top: 0 !important;
   }
 
   .page4 #img1 {
@@ -923,7 +888,7 @@ body .page9 .images-page9 {
   }
   .page7 .my-images-page7 .group-shape {
     position: relative;
-    justify-content: flex-start !important;
+    justify-content: space-evenly !important;
   }
   .page7 .my-images-page7 .group-shape::after {
     content: "";
@@ -933,19 +898,20 @@ body .page9 .images-page9 {
     width: 81px;
     height: 86px;
     top: 33%;
-    left: -17%;
+    left: -9%;
     opacity: 0;
     animation: op 1s alternate 4.5s both;
   }
   .page7 .my-images-page7 .group-shape > img:nth-of-type(1) {
-    width: 39.5% !important;
+    width: 25% !important;
     margin-top: 3%;
   }
   .page7 .my-images-page7 .group-shape > img:nth-of-type(2) {
-    width: 14% !important;
+    width: 11% !important;
+    margin-top: 4px;
   }
   .page7 .my-images-page7 .group-shape > img:nth-of-type(3) {
-    width: 41% !important;
+    width: 25% !important;
     margin-top: 3%;
   }
   .page7 .my-images-page7 > img:nth-of-type(2) {
@@ -956,7 +922,7 @@ body .page9 .images-page9 {
   .page7 .my-images-page7 > img:nth-of-type(3) {
     width: 40% !important;
     bottom: -23% !important;
-    left: 40% !important;
+    left: 45% !important;
   }
 
   .page8 #my-img1 {
@@ -1072,7 +1038,7 @@ body .page9 .images-page9 {
     position: absolute;
     width: 46% !important;
     margin: 0 !important;
-    top: 73%;
+    top: 84%;
     left: 27%;
   }
   .page10 .my-images-page10 > img:nth-of-type(5) {
@@ -1145,6 +1111,7 @@ body .page9 .images-page9 {
 .page9 #my-img1,
 .page9 #my-img3,
 .my-images-page9,
+.my-images-page8,
 .page7 #my-img1,
 .my-images-page7,
 .page6 #my-img1,

@@ -55,13 +55,18 @@ html {
   width: 100%;
 }
 body::before {
-  background: url(../images/s8/textb1.png) no-repeat !important;
-  bottom: 25% !important;
+  content: "1. Dewey KG, Mayers DR. Early child growth: how do nutrition and infection interact?. Matern Child Nutr. 2011;7(Suppl 3):129-42. \a 2. The infant and young child during periods of acute infection. WHO. Available at: https://apps.who.int/iris/bitstream/ \a handle/10665/264623/PMC2491201.pdf?sequence=1&isAllowed=y. Last accessed: 6/4/2022." !important;
+  white-space: pre-wrap;
+  background: none !important;
+  font-weight: bold;
+  color: #000;
+  font-size: 10px;
+  bottom: 23% !important;
 }
 @media (min-width: 577px) and (max-width: 992px) {
   body::before {
-    background: url(../images/s8/textb2.png) no-repeat !important;
-    bottom: 15% !important;
+    background: none !important;
+    bottom: 5% !important;
   }
 }
 body {

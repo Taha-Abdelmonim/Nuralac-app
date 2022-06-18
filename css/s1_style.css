@@ -234,12 +234,3 @@ body #Main_Container .logo {
 body #Main_Container::before {
   background: url(../images/s1/linksHome.png) no-repeat;
 }
-.main-link {
-  position: absolute;
-  font-size: 30px;
-  top: 10%;
-  left: 10%;
-  color: #000;
-  font-weight: bold;
-  text-decoration: underline;
-}

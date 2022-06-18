@@ -55,13 +55,19 @@ html {
   width: 100%;
 }
 body::before {
-  background: url(../images/s10/textb1.png) no-repeat !important;
-  bottom: 7% !important;
+  content: "DHA: Docosahexaenoic acid; GOS: Galacto-oligosaccharide; HMOs: Human milk oligosaccharides; 2’-FL: 2’Fucosyllactose. \a 1. Nuralac® Labeling Information." !important;
+  white-space: pre-wrap;
+  background: none !important;
+  font-weight: bold;
+  color: #000;
+  font-size: 10px;
+  bottom: 16% !important;
 }
+
 @media (min-width: 577px) and (max-width: 992px) {
   body::before {
-    background: url(../images/s10/textb2.png) no-repeat !important;
-    bottom: 14% !important;
+    background: none no-repeat !important;
+    bottom: 2% !important;
   }
 }
 body {
