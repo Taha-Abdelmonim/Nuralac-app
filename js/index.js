@@ -31,25 +31,25 @@ fullScreen.addEventListener("click", () => {
 //   }
 // }); w 121 x h 121 x 13 y 13
 
-document.addEventListener("dblclick", () => {
-  toggleFullScreen();
-});
+// document.addEventListener("dblclick", () => {
+//   toggleFullScreen();
+// });
 // document.addEventListener("fullscreenchange", () => {
 //   console.log("Full Screen Change");
 // });
-let count = 0;
-function handleTouchStart(e) {
-  count++;
-  if (count === 2) {
-    toggleFullScreen();
-    count = 0;
-  } else {
-    setTimeout(() => {
-      count = 0;
-    }, 150);
-  }
-}
-document.addEventListener("touchstart", handleTouchStart, false);
-document.addEventListener("touchmove", () => {
-  count = 0;
-});
+// let count = 0;
+// function handleTouchStart(e) {
+//   count++;
+//   if (count === 2) {
+//     toggleFullScreen();
+//     count = 0;
+//   } else {
+//     setTimeout(() => {
+//       count = 0;
+//     }, 150);
+//   }
+// }
+// document.addEventListener("touchstart", handleTouchStart, false);
+// document.addEventListener("touchmove", () => {
+//   count = 0;
+// });
