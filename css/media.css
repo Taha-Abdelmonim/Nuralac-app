@@ -732,7 +732,7 @@ body .page9 .images-page9 {
 
   .page2 .text-global {
     background: url(../images/s2/img11.png) no-repeat !important;
-    top: 5% !important;
+    top: 3% !important;
   }
   .page2 .my-analysis-circle {
     overflow-y: clip !important;
@@ -788,7 +788,7 @@ body .page9 .images-page9 {
   .page2 .my-analysis-circle .my-analysis #my-mask #my-img5 {
     width: 88% !important;
     height: 90%;
-    top: 10%;
+    top: 7%;
   }
 
   .page3 .my-images-page3 {
@@ -797,7 +797,7 @@ body .page9 .images-page9 {
   }
   .page3 .my-images-page3 div:nth-of-type(1) {
     background: url(../images/s3/img1.png) no-repeat !important;
-    top: -42% !important;
+    top: -58% !important;
     left: 1% !important;
   }
   .page3 .my-images-page3 div:nth-of-type(2) {
@@ -809,7 +809,7 @@ body .page9 .images-page9 {
 
   .page4 #img1 {
     background: url(../images/s4/text2.png) no-repeat !important;
-    top: 6% !important;
+    top: 4% !important;
   }
   .page4 .my-images-page4 {
     top: 13% !important;
@@ -821,7 +821,7 @@ body .page9 .images-page9 {
 
   .page5 #my-img1 {
     background: url(../images/s5/text3.png) no-repeat !important;
-    top: 4% !important;
+    top: 3% !important;
     max-width: 80% !important;
   }
   .page5 #my-img2 {
@@ -836,8 +836,8 @@ body .page9 .images-page9 {
   }
   .page5 .my-images-page5 img:nth-of-type(1) {
     width: 50% !important;
-    margin-left: 50% !important;
-    height: 150px !important;
+    margin-left: 23% !important;
+    height: 55vh !important;
     transform: translateX(-50%);
   }
   .page5 .my-images-page5 img:nth-of-type(2) {
@@ -969,7 +969,7 @@ body .page9 .images-page9 {
   .page9 #my-img1 {
     display: block !important;
     background: url(../images/s9/text2.png) no-repeat !important;
-    top: 8.5% !important;
+    top: 4.5% !important;
   }
   .page9 .button2 {
     position: absolute;
@@ -1123,6 +1123,7 @@ body .page9 .images-page9 {
 .my-images-page5,
 .my-images-page4,
 .my-images-page3,
+.my-analysis-circle,
 .logo,
 .my-images {
     display: none;

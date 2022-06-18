@@ -83,6 +83,16 @@
             window.location = "#";
           },
         });
+        if (window.matchMedia("(min-width: 992px)").matches) {
+          $("#Main_Container").swipe({
+            swipeLeft: function (event, direction, distance, duration, fingerCount) {
+              window.location = "slide2.html";
+            },
+            swipeRight: function (event, direction, distance, duration, fingerCount) {
+              window.location = "#";
+            },
+          });
+        }
       });
     </script>
     <script src="./js/index.js"></script>

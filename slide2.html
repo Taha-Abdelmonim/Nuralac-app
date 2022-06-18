@@ -172,6 +172,16 @@
             window.location = "index.html";
           },
         });
+        if (window.matchMedia("(min-width: 992px)").matches) {
+          $("#Main_Container").swipe({
+            swipeLeft: function (event, direction, distance, duration, fingerCount) {
+              window.location = "slide3.html";
+            },
+            swipeRight: function (event, direction, distance, duration, fingerCount) {
+              window.location = "index.html";
+            },
+          });
+        }
       });
     </script>
     <script src="./js/index.js"></script>

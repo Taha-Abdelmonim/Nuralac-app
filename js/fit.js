@@ -22,4 +22,3 @@ $(window).on("resize", function () {
   }
 });
 // 360 x 707
-
