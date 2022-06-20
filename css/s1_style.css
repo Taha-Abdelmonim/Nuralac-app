@@ -97,11 +97,12 @@ body::after {
 }
 body #Main_Container .logo {
   bottom: auto !important;
-  top: 20px;
+  top: 40px;
   left: auto !important;
-  right: -70px;
+  right: -55px;
+  transform: none !important;
 }
-#Main_Container {
+#Main_Container.page1 {
   width: 1024px;
   height: 768px;
   overflow: hidden;
@@ -110,8 +111,12 @@ body #Main_Container .logo {
   top: 0px;
   right: 0px;
   bottom: 0px;
-  background-image: url(../images/s1/bg.jpg);
-  background-repeat: no-repeat;
+}
+@media (min-width: 992px) {
+  #Main_Container.page1 {
+    background-image: url(../images/s1/bg.jpg) !important;
+    background-repeat: no-repeat !important;
+  }
 }
 
 /* Main Slide  */

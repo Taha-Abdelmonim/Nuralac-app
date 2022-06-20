@@ -29,6 +29,7 @@
 
     <script type="text/javascript" id="customs-js">
       $(document).ready(function () {
+        $("#text-global").insert("drawLine", "0", "6");
         $("#img1").insert("drawLine", "0", "6");
         $("#img2").insert("rotateIn", "3", "1");
         $("#img3").insert("fadeIn", "4", "1");
@@ -46,6 +47,19 @@
   <body>
     <div id="Main_Container" class="page4">
       <!-- main slide -->
+      <div
+        id="text-global"
+        class="text-global"
+        data-text="Nuralac <sup> ® </sup> advanced formula supports gut comfort by offering… "
+      >
+        Nuralac <sup> ® </sup> advanced formula <br />
+        supports gut comfort by <br />
+        offering…
+      </div>
+      <div class="text-footer">
+        GOS: Galacto-oligosaccharide. <br />
+        1. Nuralac <sup> ® </sup> Labeling Information.
+      </div>
       <!-- tabs -->
       <div class="links">
         <a href="index.html"> <div id="home"></div></a>
@@ -82,7 +96,7 @@
     </div>
     <script type="application/javascript">
       $(document).ready(function (e) {
-        $("#img1").swipe({
+        $("#text-global").swipe({
           swipeLeft: function (event, direction, distance, duration, fingerCount) {
             window.location = "slide5.html";
           },

@@ -108,7 +108,24 @@
   <body>
     <div id="Main_Container" class="page2">
       <!-- main slide -->
-      <div id="text-global" class="text-global"></div>
+      <div
+        id="text-global"
+        class="text-global"
+        data-text="GIT is the largest immune organ in the body, and it is the main <br /> cause to switch formula during the 1st year of life1,2"
+      >
+        GIT is the largest immune organ <br />
+        in the body, and it is the main<br />
+        cause to switch formula during<br />
+        the 1st year of life1,2
+      </div>
+      <div class="text-footer">
+        GIT: Gastrointestinal tract; FGIDs: Functional gastrointestinal disorders. <br />
+        1. Chassaing B, Kumar M, Baker MT, Singh V, Vijay-Kumar M. Mammalian Gut Immunity. Biomed J. 2014;37(5):246-258. <br />
+        2. Al-Faleh K, Al-Luwaimi E, Al-Jefri S, Al-Osaimi A, Behaisi M. Infant Formula in Saudi Arabia: A Cross Sectional Survey.
+        Kuwait Med J. 2014;46(4):328-32. <br />
+        3. Vandenplas Y, Al-turaiki MA, Al-Qabandi W, et al. Middle East Consensus Statement on the Diagnosis and Management of
+        Functional Gastrointestinal Disorders in < 12 Months Old Infants. Pediatr Gastroenterol Hepatol Nutr. 2016;19(3):153-161.
+      </div>
       <!-- tabs -->
       <div class="links">
         <a href="index.html"> <div id="home"></div></a>
@@ -142,7 +159,7 @@
           </div>
         </div>
       </div>
-      <div class="my-analysis-circle">
+      <div class="my-analysis-circle" id="my-analysis-circle">
         <div class="con1">
           <img id="my-img1" src="images/s2/img3.png" />
           <div id="my-circle1"></div>
@@ -162,8 +179,18 @@
 
       <!-- main slide -->
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
     <script type="application/javascript">
       $(document).ready(function (e) {
+        $(function () {
+          $("#my-analysis-circle").niceScroll({
+            cursoropacitymin: 1,
+            cursorwidth: "10px",
+            hidecursordelay: 100,
+            preventmultitouchscrolling: false,
+            enableobserver: false,
+          });
+        });
         $("#text-global").swipe({
           swipeLeft: function (event, direction, distance, duration, fingerCount) {
             window.location = "slide3.html";

@@ -39,7 +39,7 @@
         $("#img8").insert("fadeIn", "11", "1");
         // my images
         $("#my-img1").insert("drawLine", "0", "6");
-        $("#my-img2").insert("drawLine", "3", "6");
+        $("#text-global-2").insert("drawLine", "3", "6");
         $("#my-img3").insert("fadeIn", "7", "1");
         $("#my-img4").insert("fadeIn", "8", "1");
         $("#my-img5").insert("fadeIn", "9", "1");
@@ -52,6 +52,14 @@
   <body>
     <div id="Main_Container" class="page6">
       <!-- main slide -->
+      <div id="text-global-2" class="text-global-2" data-text="Studies showed that HMOs have several health benefits:">
+        Studies showed that HMOs have several <br />health benefits:
+      </div>
+      <div class="text-footer">
+        HMOs: Human milk oligosaccharides; 2’-FL: 2’Fucosyllactose. <br />
+        1. Hegar B, Wibowo Y, Basrowi RW, et al. The Role of Two Human Milk Oligosaccharides, 2′-Fucosyllactose and
+        Lacto-N-Neotetraose, in Infant Nutrition. Pediatr Gastroenterol Hepatol Nutr. 2019;22(4):330-340.
+      </div>
       <!-- tabs -->
       <div class="links">
         <a href="index.html"> <div id="home"></div></a>
@@ -79,8 +87,8 @@
         <img id="img8" src="images/s6/img8.png" />
       </div>
       <div id="my-img1"></div>
-      <div id="my-img2"></div>
-      <div class="my-images-page6">
+      <!-- <div id="my-img2"></div> -->
+      <div class="my-images-page6" id="my-images-page6">
         <img id="my-img3" src="images/s6/shepe1.png" />
         <img id="my-img4" src="images/s6/shepe2.png" />
         <img id="my-img5" src="images/s6/shepe3.png" />
@@ -91,8 +99,18 @@
 
       <!-- main slide -->
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
     <script type="application/javascript">
       $(document).ready(function (e) {
+        $(function () {
+          $("#my-images-page6").niceScroll({
+            cursoropacitymin: 1,
+            cursorwidth: "10px",
+            hidecursordelay: 100,
+            preventmultitouchscrolling: false,
+            enableobserver: false,
+          });
+        });
         $("#my-img1").swipe({
           swipeLeft: function (event, direction, distance, duration, fingerCount) {
             window.location = "slide7.html";

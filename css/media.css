@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap");
 @keyframes op {
   0% {
     opacity: 0;
@@ -54,23 +55,59 @@
   }
 }
 @media (max-width: 992px) {
-  ::-webkit-scrollbar-track {
+  #ascrail2000-hr,
+#ascrail2000 {
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
     border-radius: 10px;
   }
 
-  ::-webkit-scrollbar-thumb {
+  .nicescroll-cursors {
     box-shadow: inset 0 0 6px black;
-    border-radius: 10px;
+    border-radius: 10px !important;
+    background-color: transparent !important;
   }
 
-  ::-webkit-scrollbar-corner {
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  .text-global {
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    top: 10.3%;
+    height: 83px;
+    left: 6%;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px #000000;
+    font-size: 21px;
+    line-height: 0.9;
   }
 
-  ::-webkit-scrollbar {
-    width: 10px;
-    height: 15px;
+  .text-global-2 {
+    position: absolute;
+    background-size: 100%;
+    left: 4%;
+    top: 22%;
+    height: 51px;
+    width: 80%;
+    z-index: 1;
+    color: #333687;
+    font-size: 15px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .text-footer {
+    position: absolute;
+    width: 99%;
+    height: 60px;
+    left: 5px;
+    bottom: 24.5%;
+    z-index: 1;
+    font-size: 10px;
+    line-height: 1.3;
+    font-weight: 600;
+    color: #0000009e;
   }
 
   .logo-lg-screen {
@@ -79,11 +116,13 @@
 
   :root,
 body {
-    overflow-x: clip !important;
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
+    font-family: "Almarai", sans-serif;
   }
 
   body {
-    height: 100vh;
+    height: 120vh;
     width: 100vw;
     position: relative;
   }
@@ -95,17 +134,6 @@ body {
     top: 10%;
     background: linear-gradient(to right, #105fb9 22%, #1e88e5 44%, #2196f3 66%, #90caf9 97%, #e3f2fd 100%);
     filter: hue-rotate(-15deg);
-  }
-  body::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 60px;
-    left: 5px;
-    bottom: 20%;
-    z-index: 1;
-    background: url(../images/s1/text-global.png) no-repeat;
-    background-size: 100%;
   }
   body #Main_Container {
     background: #fff;
@@ -190,14 +218,6 @@ body #Main_Container .logo img {
     left: 56px;
     width: 60px;
   }
-  body .page2 .text-global {
-    position: absolute;
-    background: url(../images/s2/img10.png) no-repeat;
-    z-index: 1;
-    top: 10%;
-    height: 83px;
-    left: 0px;
-  }
   body .page2 .analysis-circle {
     display: none;
   }
@@ -226,7 +246,7 @@ body .page2 .my-analysis-circle .con1 div {
     transform: scale(0.8);
   }
   body .page2 .my-analysis-circle .my-analysis {
-    width: 98%;
+    width: 94%;
     margin-left: 1%;
     position: relative;
     margin-top: 15%;
@@ -252,6 +272,10 @@ body .page2 .my-analysis-circle .con1 div {
     position: absolute;
     left: 11%;
   }
+  body .page3 .text-global {
+    top: 12%;
+    line-height: 1.2;
+  }
   body .page3 .images-page3 {
     display: none;
   }
@@ -273,15 +297,11 @@ body .page2 .my-analysis-circle .con1 div {
     height: 82px;
     z-index: 1;
   }
-  body .page3 .my-images-page3 div:nth-of-type(2) {
-    position: absolute;
-    background: url(../images/s3/text2.png) no-repeat;
-    background-size: 100%;
-    left: 4%;
-    top: -7%;
-    height: 51px;
-    width: 80%;
-    z-index: 1;
+  body .page4 #img1 {
+    display: none;
+  }
+  body .page4 .text-global {
+    top: 11%;
   }
   body .page4 .images-page4 {
     display: none;
@@ -327,6 +347,9 @@ body .page2 .my-analysis-circle .con1 div {
     margin-top: 56%;
     margin-left: 19%;
   }
+  body .page5 .text-global-2 {
+    line-height: 1;
+  }
   body .page5 .images-page5 {
     display: none;
   }
@@ -366,6 +389,9 @@ body .page2 .my-analysis-circle .con1 div {
   body .page6 .images-page6 {
     display: none;
   }
+  body .page6 .text-global-2 {
+    line-height: 1.2;
+  }
   body .page6 #my-img1 {
     background: url(../images/s6/text1.png) no-repeat;
     position: absolute;
@@ -391,7 +417,6 @@ body .page2 .my-analysis-circle .con1 div {
     width: 100vw;
     height: 40vh;
     overflow-y: scroll;
-    border-bottom: 2px solid #0696cd;
     align-items: center;
     justify-content: space-between;
   }
@@ -430,6 +455,9 @@ body .page2 .my-analysis-circle .con1 div {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  body .page7 .my-images-page7 #my-img3 {
+    width: 44%;
   }
   body .page7 .my-images-page7 > img:nth-of-type(3) {
     width: 75%;
@@ -634,14 +662,16 @@ body .page9 .images-page9 {
   }
 }
 @media (min-width: 577px) and (max-width: 992px) {
+  #ascrail2000 {
+    display: none !important;
+  }
+
   body {
     overflow-y: scroll;
     height: 120vh !important;
   }
   body::before {
-    background: url(../images/s1/text-global2.png) no-repeat;
-    background-size: 80% 80%;
-    bottom: 10%;
+    bottom: 16%;
   }
   body::after {
     top: 3%;
@@ -705,6 +735,13 @@ body .page9 .images-page9 {
     width: 18% !important;
   }
 
+  .text-global {
+    left: 2% !important;
+    max-width: 80% !important;
+    font-size: 19px !important;
+    top: 5% !important;
+  }
+
   .page1 .my-images {
     position: relative;
     width: 100vw;
@@ -731,8 +768,10 @@ body .page9 .images-page9 {
   }
 
   .page2 .text-global {
-    background: url(../images/s2/img11.png) no-repeat !important;
-    top: 3% !important;
+    top: 5% !important;
+  }
+  .page2 .text-footer {
+    bottom: 12.5% !important;
   }
   .page2 .my-analysis-circle {
     overflow-y: clip !important;
@@ -791,6 +830,12 @@ body .page9 .images-page9 {
     top: 7%;
   }
 
+  .page3 .text-global-2 {
+    top: 25% !important;
+  }
+  .page3 .text-footer {
+    bottom: 14.5%;
+  }
   .page3 .my-images-page3 {
     flex-direction: row !important;
     top: 28% !important;
@@ -819,6 +864,12 @@ body .page9 .images-page9 {
     top: 39px !important;
   }
 
+  .page5 .text-global-2 {
+    top: 24% !important;
+  }
+  .page5 .text-footer {
+    bottom: 10.5%;
+  }
   .page5 #my-img1 {
     background: url(../images/s5/text3.png) no-repeat !important;
     top: 3% !important;
@@ -846,6 +897,12 @@ body .page9 .images-page9 {
     margin-left: -25% !important;
   }
 
+  .page6 .text-global-2 {
+    top: 24% !important;
+  }
+  .page6 .text-footer {
+    bottom: 7.5% !important;
+  }
   .page6 #my-img1 {
     background: url(../images/s6/text4.png) no-repeat !important;
     top: 3.5% !important;
@@ -873,6 +930,9 @@ body .page9 .images-page9 {
     bottom: 24% !important;
   }
 
+  .page7 .text-footer {
+    bottom: 6.5% !important;
+  }
   .page7 #my-img1 {
     background: url(../images/s7/text4.png) no-repeat !important;
     top: 2.5% !important;
@@ -885,6 +945,7 @@ body .page9 .images-page9 {
   }
   .page7 .my-images-page7 #my-img3 {
     margin-right: 8%;
+    width: 22% !important;
   }
   .page7 .my-images-page7 .group-shape {
     position: relative;
@@ -925,6 +986,9 @@ body .page9 .images-page9 {
     left: 45% !important;
   }
 
+  .page8 .text-footer {
+    bottom: 9.5% !important;
+  }
   .page8 #my-img1 {
     background: url(../images/s8/text2.png) no-repeat !important;
     top: 3.5% !important;
@@ -963,6 +1027,9 @@ body .page9 .images-page9 {
     width: 11% !important;
   }
 
+  .page9 .text-footer {
+    bottom: 6.5% !important;
+  }
   .page9 .button2 {
     display: block !important;
   }
@@ -1009,6 +1076,9 @@ body .page9 .images-page9 {
     margin: 0 !important;
   }
 
+  .page10 .text-footer {
+    bottom: 6.5% !important;
+  }
   .page10 #my-img1 {
     background: url(../images/s10/text2.png) no-repeat !important;
     top: 2% !important;
@@ -1101,7 +1171,9 @@ body .page9 .images-page9 {
   }
 }
 @media (min-width: 992px) {
-  #full-screen,
+  .text-global-2,
+.text-footer,
+#full-screen,
 .page12 #my-img1,
 .my-images-page12,
 .page11 #my-img1,
@@ -1125,6 +1197,7 @@ body .page9 .images-page9 {
 .my-images-page3,
 .my-analysis-circle,
 .logo,
+.text-global,
 .my-images {
     display: none;
   }
@@ -1132,6 +1205,11 @@ body .page9 .images-page9 {
 @media (prefers-color-scheme: dark) {
   body {
     color: #333;
-    background: #fff;
+    background: #fff !important;
+  }
+
+  #Main_Container {
+    color: #333;
+    background-color: #fff !important;
   }
 }

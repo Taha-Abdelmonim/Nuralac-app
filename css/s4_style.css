@@ -55,9 +55,7 @@ html {
   height: 100%;
   width: 100%;
 }
-body::before {
-  background: url(../images/s4/text3.png) no-repeat !important;
-}
+
 body {
   width: 1024px;
   height: 768px;
@@ -71,19 +69,7 @@ body {
   -webkit-transform-origin: top left;
   margin: 0;
 }
-@media (min-width: 577px) and (max-width: 992px) {
-  body {
-    
-  }
-}
-body::before {
-  content: "GOS: Galacto-oligosaccharide. \a 1.Nuralac® Labeling Information." !important;
-  white-space: pre;
-  background: none !important;
-  font-weight: bold;
-  color: #000;
-  font-size: 11px;
-}
+
 
 #Main_Container {
   width: 1024px;

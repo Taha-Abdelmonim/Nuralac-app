@@ -54,19 +54,9 @@ html {
   height: 100%;
   width: 100%;
 }
-body::before {
-  content: "HMOs: Human milk oligosaccharides; 2’-FL: 2’Fucosyllactose. \a 1. Morrow AL, Ruiz-Palacios GM, Altaye M, et al. Human Milk Oligosaccharides are Associated with Protection Against Diarrhea in \a Breast-fed Infants. J Pediatr. 2004;145(3):297-303." !important;
-  white-space: pre-wrap;
-  background: none !important;
-  font-weight: bold;
-  color: #000;
-  font-size: 10px;
-  bottom: 23% !important;
-}
+
 @media (min-width: 577px) and (max-width: 992px) {
   body::before {
-    background: none !important;
-    bottom: 5% !important;
   }
 }
 body {
