@@ -89,8 +89,8 @@ body::after {
   display: none;
 }
 #Main_Container::after {
-  right: auto;
   left: 0;
+  top: 30px !important;
 }
 #Main_Container .links::after {
   display: none;
