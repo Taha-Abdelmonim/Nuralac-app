@@ -39,8 +39,8 @@
         // my images
         $("#text-global").insert("drawLine", "0", "6");
         $("#text-global-2").insert("fadeIn", "3", "1");
-        $("#my-img3").insert("fadeInLeft", "4", "1");
-        $("#my-img4").insert("fadeInRight", "5", "1");
+        $("#main-image1").insert("fadeInLeft", "4", "1");
+        $("#main-image2").insert("fadeInRight", "5", "1");
       });
     </script>
     <link rel="stylesheet" href="./css/media.css" />
@@ -50,13 +50,24 @@
       <!-- main slide -->
       <div id="text-global" class="text-global" data-text="High quality proteins support gut health1,2">
         High quality proteins support <br />
-        gut health1,2
+        gut health<sup>1,2</sup>
       </div>
-      <div id="text-global-2" class="text-global-2" data-text="High quality protein potentiated by the addition of α-lactalbumin supports gut:">
+      <div
+        id="text-global-2"
+        class="text-global-2"
+        data-text="High quality protein potentiated by the addition of α-lactalbumin supports gut:"
+      >
         High quality protein potentiated by the<br />
         addition of α-lactalbumin supports gut:
       </div>
-      <div class="text-footer">GI: Gastrointestinal. <br /> 1. Davis AM, Harris BJ, Lien EL, Pramuk K, Trabulsi J. α-lactalbumin-rich infant formula fed to healthy term infants in a multicenter study: plasma essential amino acids and gastrointestinal tolerance. Eur J Clin Nutr. 2008;62(11):1294-301. <br /> 2. Bettler J, Kulen MJ. Abstract PN11-1. J Pediatr Gastroenterol Nutr. 2007; 44(6):e197.</div>
+      <div class="text-footer">
+        GI: Gastrointestinal. <br />
+        1. Davis AM, Harris BJ, Lien EL, Pramuk K, Trabulsi J. α-lactalbumin-rich infant formula fed to healthy term infants in a
+        multicenter study: plasma essential amino acids and gastrointestinal tolerance.
+        <i>Eur J Clin Nutr.</i> 2008;62(11):1294-301.
+        <br />
+        2. Bettler J, Kulen MJ. Abstract PN11-1. <i>J Pediatr Gastroenterol Nutr.</i> 2007; 44(6):e197.
+      </div>
       <!-- tabs -->
       <div class="links">
         <a href="index.html"> <div id="home"></div></a>
@@ -81,8 +92,14 @@
       </div>
       <div class="my-images-page3">
         <div id="my-img1"></div>
-        <img id="my-img3" src="./images/s3/chep1.png" />
-        <img id="my-img4" src="./images/s3/chep2.png" />
+        <div class="main-image1" id="main-image1">
+          <img id="my-img3" src="./images/s3/chep1.png" />
+          <div class="main-text1">Promotes GI tolerance to be similar to human milk-fed infants.<sup>1</sup></div>
+        </div>
+        <div class="main-image2" id="main-image2">
+          <img id="my-img4" src="./images/s3/chep2.png" />
+          <div class="main-text2">Prebiotic effect by increasing bifidobacteria concentration.<sup>2</sup></div>
+        </div>
       </div>
       <!-- main slide -->
     </div>

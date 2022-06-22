@@ -103,8 +103,8 @@ body #Main_Container .logo {
   transform: none !important;
 }
 #Main_Container.page1 {
-  width: 1024px;
-  height: 768px;
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
   position: absolute;
   left: 0px;
@@ -114,6 +114,7 @@ body #Main_Container .logo {
 }
 @media (min-width: 992px) {
   #Main_Container.page1 {
+    height: 115vh;
     background-image: url(../images/s1/bg.jpg) !important;
     background-repeat: no-repeat !important;
   }

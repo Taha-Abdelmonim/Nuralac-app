@@ -40,10 +40,10 @@
         // my images
         $("#my-img1").insert("drawLine", "0", "6");
         $("#text-global-2").insert("drawLine", "3", "6");
-        $("#my-img3").insert("fadeIn", "7", "1");
-        $("#my-img4").insert("fadeIn", "8", "1");
-        $("#my-img5").insert("fadeIn", "9", "1");
-        $("#my-img6").insert("fadeIn", "10", "1");
+        $("#main-div1").insert("fadeIn", "7", "1");
+        $("#main-div2").insert("fadeIn", "8", "1");
+        $("#main-div3").insert("fadeIn", "9", "1");
+        $("#main-div4").insert("fadeIn", "10", "1");
         $("#my-img7").insert("fadeIn", "11", "1");
       });
     </script>
@@ -58,7 +58,7 @@
       <div class="text-footer">
         HMOs: Human milk oligosaccharides; 2’-FL: 2’Fucosyllactose. <br />
         1. Hegar B, Wibowo Y, Basrowi RW, et al. The Role of Two Human Milk Oligosaccharides, 2′-Fucosyllactose and
-        Lacto-N-Neotetraose, in Infant Nutrition. Pediatr Gastroenterol Hepatol Nutr. 2019;22(4):330-340.
+        Lacto-N-Neotetraose, in Infant Nutrition. <i>Pediatr Gastroenterol Hepatol Nutr.</i> 2019;22(4):330-340.
       </div>
       <!-- tabs -->
       <div class="links">
@@ -86,13 +86,33 @@
         <img id="img7" src="images/s6/img7.png" />
         <img id="img8" src="images/s6/img8.png" />
       </div>
-      <div id="my-img1"></div>
+      <div
+        id="my-img1"
+        class="text-global"
+        data-text="Human milk oligosaccharides are the third most abundant <br /> component of breast milk<sup>1</sup>"
+      >
+        Human milk oligosaccharides <br />
+        are the third most abundant <br />
+        component of breast milk<sup>1</sup>
+      </div>
       <!-- <div id="my-img2"></div> -->
       <div class="my-images-page6" id="my-images-page6">
-        <img id="my-img3" src="images/s6/shepe1.png" />
-        <img id="my-img4" src="images/s6/shepe2.png" />
-        <img id="my-img5" src="images/s6/shepe3.png" />
-        <img id="my-img6" src="images/s6/shepe4.png" />
+        <div class="main-div1" id="main-div1">
+          <img id="my-img3" src="images/s6/shepe1.png" />
+          <div>Modulation of intestinal microbiota.<sup>1</sup></div>
+        </div>
+        <div class="main-div2" id="main-div2">
+          <img id="my-img3" src="images/s6/shepe2.png" />
+          <div>Development of the immune system.<sup>1</sup></div>
+        </div>
+        <div class="main-div3" id="main-div3">
+          <img id="my-img3" src="images/s6/shepe3.png" />
+          <div>Anti-adhesive effect against pathogens.<sup>1</sup></div>
+        </div>
+        <div class="main-div4" id="main-div4">
+          <img id="my-img3" src="images/s6/shepe4.png" />
+          <div>Modulation of intestinal epithelial cell response.<sup>1</sup></div>
+        </div>
       </div>
       <img id="my-img7" class="button1" src="images/s6/button.png" />
       <img id="my-img7" class="button2" src="images/s6/button2.png" />

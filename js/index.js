@@ -1,4 +1,4 @@
-let landTextHeader = document.getElementById("text-global");
+let landTextHeader = document.querySelector(".text-global");
 let landTextHeader2 = document.getElementById("text-global-2");
 if (window.matchMedia("(min-width: 577px)").matches) {
   if (landTextHeader) {
