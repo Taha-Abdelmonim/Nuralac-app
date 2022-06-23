@@ -112,9 +112,19 @@ body #Main_Container .logo {
   right: 0px;
   bottom: 0px;
 }
+@media (max-width: 992px) {
+  body {
+    overflow-y: hidden !important;
+    overflow-x: hidden !important;
+    height: calc(100vh - 55px) !important;
+  }
+  body #Main_Container::before {
+    background: url(../images/s1/linksHome.png) no-repeat;
+  }
+}
 @media (min-width: 992px) {
   #Main_Container.page1 {
-    height: 115vh;
+    height: 100%;
     background-image: url(../images/s1/bg.jpg) !important;
     background-repeat: no-repeat !important;
   }
@@ -237,7 +247,3 @@ body #Main_Container .logo {
 }
 
 /* End Main Slide  */
-
-body #Main_Container::before {
-  background: url(../images/s1/linksHome.png) no-repeat;
-}
