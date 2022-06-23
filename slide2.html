@@ -31,7 +31,8 @@
     <script type="text/javascript" id="customs-js">
       $(document).ready(function () {
         $("#img1").insert("drawLine", "0", "6");
-        $("#text-global").insert("drawLine", "0", "6");
+        $("#text-global").insert("drawLineHeight", "0", "4");
+        // $("#text-footer").insert("drawLineHeightFooter", "13", "3");
         $("#img2").insert("drawLine", "3", "6");
         $("#img3").insert("fadeInLeft", "6", "1");
         $("#img5").insert("fadeInLeft", "8", "1");
@@ -110,10 +111,9 @@
         class="text-global"
         data-text="GIT is the largest immune organ in the body, and it is the main <br /> cause to switch formula during the 1st year of life1,2"
       >
-        GIT is the largest immune organ in the <br />
-        body, and it is the main cause to switch <br />formula during the 1<sup>st</sup> year of life<sup>1,2</sup>
+        GIT is the largest immune organ in the body, and it is the main cause to switch formula during the 1<sup>st</sup> year of life<sup>1,2</sup>
       </div>
-      <div class="text-footer">
+      <div class="text-footer" id="text-footer">
         GIT: Gastrointestinal tract; FGIDs: Functional gastrointestinal disorders. <br />
         1. Chassaing B, Kumar M, Baker MT, Singh V, Vijay-Kumar M. Mammalian Gut Immunity. <i> Biomed J.</i> 2014;37(5):246-258.
         <br />
@@ -187,7 +187,16 @@
             enableobserver: false,
           });
         });
-        $("#text-global").swipe({
+        // $("#text-global").swipe({
+        //   swipeLeft: function (event, direction, distance, duration, fingerCount) {
+        //     window.location = "slide3.html";
+        //   },
+        //   swipeRight: function (event, direction, distance, duration, fingerCount) {
+        //     window.location = "index.html";
+        //   },
+        // });
+        // if (window.matchMedia("(min-width: 992px)").matches) {
+        $("#Main_Container").swipe({
           swipeLeft: function (event, direction, distance, duration, fingerCount) {
             window.location = "slide3.html";
           },
@@ -195,16 +204,7 @@
             window.location = "index.html";
           },
         });
-        if (window.matchMedia("(min-width: 992px)").matches) {
-          $("#Main_Container").swipe({
-            swipeLeft: function (event, direction, distance, duration, fingerCount) {
-              window.location = "slide3.html";
-            },
-            swipeRight: function (event, direction, distance, duration, fingerCount) {
-              window.location = "index.html";
-            },
-          });
-        }
+        // }
       });
     </script>
     <script src="./js/index.js"></script>

@@ -32,7 +32,7 @@
         $("#img4").insert("fadeIn", "6", "1");
         $("#img5").insert("fadeInUpBig", "7", "1");
         // my images
-        $("#my-img1").insert("drawLine", "0", "6");
+        $("#my-img1").insert("drawLineHeight", "0", "6");
         $("#my-img2").insert("drawLine", "3", "6");
         $("#my-img3").insert("fadeIn", "5", "1");
         $("#my-img00").insert("fadeIn", "5", "1");
@@ -81,8 +81,7 @@
         class="text-global"
         data-text="HMOs are suggested to be clinically relevant for the protection <br /> against infant diarrhea<sup>1</sup>"
       >
-        HMOs are suggested to be clinically <br />relevant for the protection against<br />
-        infant diarrhea<sup>1</sup>
+        HMOs are suggested to be clinically relevant for the protection against infant diarrhea<sup>1</sup>
       </div>
       <img id="my-img3" class="button2" src="images/s9/img3.png" />
       <div class="my-images-page9">
@@ -96,7 +95,16 @@
     </div>
     <script type="application/javascript">
       $(document).ready(function (e) {
-        $("#my-img1").swipe({
+        // $("#my-img1").swipe({
+        //   swipeLeft: function (event, direction, distance, duration, fingerCount) {
+        //     window.location = "slide10.html";
+        //   },
+        //   swipeRight: function (event, direction, distance, duration, fingerCount) {
+        //     window.location = "slide8.html";
+        //   },
+        // });
+        // if (window.matchMedia("(min-width: 992px)").matches) {
+        $("#Main_Container").swipe({
           swipeLeft: function (event, direction, distance, duration, fingerCount) {
             window.location = "slide10.html";
           },
@@ -104,16 +112,7 @@
             window.location = "slide8.html";
           },
         });
-        if (window.matchMedia("(min-width: 992px)").matches) {
-          $("#Main_Container").swipe({
-            swipeLeft: function (event, direction, distance, duration, fingerCount) {
-              window.location = "slide10.html";
-            },
-            swipeRight: function (event, direction, distance, duration, fingerCount) {
-              window.location = "slide8.html";
-            },
-          });
-        }
+        // }
       });
     </script>
     <script src="./js/index.js"></script>

@@ -34,7 +34,7 @@
         $("#img6").insert("fadeIn", "7", "1");
         $("#img7").insert("fadeInDown", "8", "1");
         // my images
-        $("#my-img1").insert("drawLine", "0", "6");
+        $("#my-img1").insert("drawLineHeight", "0", "6");
         $("#my-img2").insert("bounceIn", "3", "1");
         $("#my-img3").insert("fadeIn", "4", "1");
         $("#my-img4").insert("fadeIn", "5", "1");
@@ -79,7 +79,7 @@
         <img id="img7" src="images/s7/img7.png" />
       </div>
       <div id="my-img1" class="text-global" data-text="Nuralac<sup>®</sup> advanced formula supports immunity by offering…">
-        Nuralac<sup>®</sup> advanced formula supports <br />immunity by offering…
+        Nuralac<sup>®</sup> advanced formula supports immunity by offering…
       </div>
       <div class="my-images-page7">
         <img id="my-img3" src="images/s7/shpe1.png" />
@@ -95,7 +95,16 @@
     </div>
     <script type="application/javascript">
       $(document).ready(function (e) {
-        $("#my-img1").swipe({
+        // $("#my-img1").swipe({
+        //   swipeLeft: function (event, direction, distance, duration, fingerCount) {
+        //     window.location = "slide8.html";
+        //   },
+        //   swipeRight: function (event, direction, distance, duration, fingerCount) {
+        //     window.location = "slide6.html";
+        //   },
+        // });
+        // if (window.matchMedia("(min-width: 992px)").matches) {
+        $("#Main_Container").swipe({
           swipeLeft: function (event, direction, distance, duration, fingerCount) {
             window.location = "slide8.html";
           },
@@ -103,16 +112,7 @@
             window.location = "slide6.html";
           },
         });
-        if (window.matchMedia("(min-width: 992px)").matches) {
-          $("#Main_Container").swipe({
-            swipeLeft: function (event, direction, distance, duration, fingerCount) {
-              window.location = "slide8.html";
-            },
-            swipeRight: function (event, direction, distance, duration, fingerCount) {
-              window.location = "slide6.html";
-            },
-          });
-        }
+        // }
       });
     </script>
     <script src="./js/index.js"></script>

@@ -34,7 +34,7 @@
         $("#img3").insert("fadeInLeft", "4", "1");
         $("#img4").insert("fadeInRight", "5", "1");
         // my images
-        $("#text-global").insert("drawLine", "0", "6");
+        $("#text-global").insert("drawLineHeight", "0", "6");
         $("#text-global-2").insert("fadeIn", "3", "1");
         $("#main-image1").insert("fadeInLeft", "4", "1");
         $("#main-image2").insert("fadeInRight", "5", "1");
@@ -97,7 +97,16 @@
     </div>
     <script type="application/javascript">
       $(document).ready(function (e) {
-        $("#text-global").swipe({
+        // $("#text-global").swipe({
+        //   swipeLeft: function (event, direction, distance, duration, fingerCount) {
+        //     window.location = "slide4.html";
+        //   },
+        //   swipeRight: function (event, direction, distance, duration, fingerCount) {
+        //     window.location = "slide2.html";
+        //   },
+        // });
+        // if (window.matchMedia("(min-width: 992px)").matches) {
+        $("#Main_Container").swipe({
           swipeLeft: function (event, direction, distance, duration, fingerCount) {
             window.location = "slide4.html";
           },
@@ -105,16 +114,7 @@
             window.location = "slide2.html";
           },
         });
-        if (window.matchMedia("(min-width: 992px)").matches) {
-          $("#Main_Container").swipe({
-            swipeLeft: function (event, direction, distance, duration, fingerCount) {
-              window.location = "slide4.html";
-            },
-            swipeRight: function (event, direction, distance, duration, fingerCount) {
-              window.location = "slide2.html";
-            },
-          });
-        }
+        // }
       });
     </script>
     <script src="./js/index.js"></script>

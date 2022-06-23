@@ -5,10 +5,7 @@
     <!-- Meta Tags -->
     <meta charset="UTF-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta
-      name="keywords"
-      content="css animation, animation, css3, webkit, mozilla, w3c, dan eden, @_dte, animated, animate.css, dan eden"
-    />
+    <meta name="keywords" content="css animation, animation, css3, webkit, mozilla, w3c, dan eden, @_dte, animated, animate.css, dan eden" />
     <meta name="viewport" content="initial-scale = 1.0, user-scalable = yes, maximum-scale = 2.0" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -41,7 +38,7 @@
 
   <body>
     <div id="Main_Container" class="page1">
-      <div id="convert"></div>
+      <!-- <div id="convert"></div> -->
       <!-- main slide -->
       <!-- tabs -->
       <div class="links">
@@ -75,7 +72,16 @@
     </div>
     <script type="application/javascript">
       $(document).ready(function (e) {
-        $("#convert").swipe({
+        // $("#convert").swipe({
+        //   swipeLeft: function (event, direction, distance, duration, fingerCount) {
+        //     window.location = "slide2.html";
+        //   },
+        //   swipeRight: function (event, direction, distance, duration, fingerCount) {
+        //     window.location = "#";
+        //   },
+        // });
+        // if (window.matchMedia("(min-width: 992px)").matches) {
+        $("#Main_Container").swipe({
           swipeLeft: function (event, direction, distance, duration, fingerCount) {
             window.location = "slide2.html";
           },
@@ -83,16 +89,7 @@
             window.location = "#";
           },
         });
-        if (window.matchMedia("(min-width: 992px)").matches) {
-          $("#Main_Container").swipe({
-            swipeLeft: function (event, direction, distance, duration, fingerCount) {
-              window.location = "slide2.html";
-            },
-            swipeRight: function (event, direction, distance, duration, fingerCount) {
-              window.location = "#";
-            },
-          });
-        }
+        // }
       });
     </script>
     <script src="./js/index.js"></script>

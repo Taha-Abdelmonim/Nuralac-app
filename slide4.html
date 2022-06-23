@@ -26,7 +26,7 @@
 
     <script type="text/javascript" id="customs-js">
       $(document).ready(function () {
-        $("#text-global").insert("drawLine", "0", "6");
+        $("#text-global").insert("drawLineHeight", "0", "6");
         $("#img1").insert("drawLine", "0", "6");
         $("#img2").insert("rotateIn", "3", "1");
         $("#img3").insert("fadeIn", "4", "1");
@@ -45,8 +45,7 @@
     <div id="Main_Container" class="page4">
       <!-- main slide -->
       <div id="text-global" class="text-global" data-text="Nuralac<sup>®</sup> advanced formula supports gut comfort by offering… ">
-        Nuralac<sup>®</sup> advanced formula supports<br />
-        gut comfort by offering…
+        Nuralac<sup>®</sup> advanced formula supports gut comfort by offering…
       </div>
       <div class="text-footer">
         GOS: Galacto-oligosaccharide. <br />
@@ -88,7 +87,16 @@
     </div>
     <script type="application/javascript">
       $(document).ready(function (e) {
-        $("#text-global").swipe({
+        // $("#text-global").swipe({
+        //   swipeLeft: function (event, direction, distance, duration, fingerCount) {
+        //     window.location = "slide5.html";
+        //   },
+        //   swipeRight: function (event, direction, distance, duration, fingerCount) {
+        //     window.location = "slide3.html";
+        //   },
+        // });
+        // if (window.matchMedia("(min-width: 992px)").matches) {
+        $("#Main_Container").swipe({
           swipeLeft: function (event, direction, distance, duration, fingerCount) {
             window.location = "slide5.html";
           },
@@ -96,16 +104,7 @@
             window.location = "slide3.html";
           },
         });
-        if (window.matchMedia("(min-width: 992px)").matches) {
-          $("#Main_Container").swipe({
-            swipeLeft: function (event, direction, distance, duration, fingerCount) {
-              window.location = "slide5.html";
-            },
-            swipeRight: function (event, direction, distance, duration, fingerCount) {
-              window.location = "slide3.html";
-            },
-          });
-        }
+        // }
       });
     </script>
     <script src="./js/index.js"></script>

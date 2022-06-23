@@ -55,7 +55,7 @@ html {
   width: 100%;
 }
 .text-footer {
-  bottom: 18.5% !important;
+  bottom: 13.5% !important;
 }
 @media (min-width: 577px) and (max-width: 992px) {
   body::before {

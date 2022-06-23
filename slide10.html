@@ -36,7 +36,7 @@
         $("#img8").insert("fadeInLeft", "9", "1");
         $("#img9").insert("fadeIn", "10", "1");
         // my images
-        $("#my-img1").insert("drawLine", "0", "6");
+        $("#my-img1").insert("drawLineHeight", "0", "6");
         $("#my-img2").insert("bounceIn", "3", "1");
         $("#my-img3").insert("fadeIn", "4", "1");
         $("#my-img4").insert("fadeIn", "6", "1");
@@ -88,7 +88,7 @@
       </div>
       <!-- main slide -->
       <div id="my-img1" class="text-global" data-text="Nuralac<sup>®</sup> advanced formula supports growth by offering…">
-        Nuralac<sup>®</sup> advanced formula supports <br />growth by offering…
+        Nuralac<sup>®</sup> advanced formula supports growth by offering…
       </div>
       <div class="my-images-page10">
         <img id="my-img3" src="images/s10/img3.png" />
@@ -107,7 +107,16 @@
     </div>
     <script type="application/javascript">
       $(document).ready(function (e) {
-        $("#my-img1").swipe({
+        // $("#my-img1").swipe({
+        //   swipeLeft: function (event, direction, distance, duration, fingerCount) {
+        //     window.location = "slide11.html";
+        //   },
+        //   swipeRight: function (event, direction, distance, duration, fingerCount) {
+        //     window.location = "slide9.html";
+        //   },
+        // });
+        // if (window.matchMedia("(min-width: 992px)").matches) {
+        $("#Main_Container").swipe({
           swipeLeft: function (event, direction, distance, duration, fingerCount) {
             window.location = "slide11.html";
           },
@@ -115,16 +124,7 @@
             window.location = "slide9.html";
           },
         });
-        if (window.matchMedia("(min-width: 992px)").matches) {
-          $("#Main_Container").swipe({
-            swipeLeft: function (event, direction, distance, duration, fingerCount) {
-              window.location = "slide11.html";
-            },
-            swipeRight: function (event, direction, distance, duration, fingerCount) {
-              window.location = "slide9.html";
-            },
-          });
-        }
+        // }
       });
     </script>
     <script src="./js/index.js"></script>

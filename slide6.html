@@ -35,7 +35,7 @@
         $("#img7").insert("fadeIn", "10", "1");
         $("#img8").insert("fadeIn", "11", "1");
         // my images
-        $("#my-img1").insert("drawLine", "0", "6");
+        $("#my-img1").insert("drawLineHeight", "0", "4");
         $("#text-global-2").insert("drawLine", "3", "6");
         $("#main-div1").insert("fadeIn", "7", "1");
         $("#main-div2").insert("fadeIn", "8", "1");
@@ -88,9 +88,7 @@
         class="text-global"
         data-text="Human milk oligosaccharides are the third most abundant <br /> component of breast milk<sup>1</sup>"
       >
-        Human milk oligosaccharides are the<br />
-        third most abundant component of<br />
-        breast milk<sup>1</sup>
+        Human milk oligosaccharides are the third most abundant component of breast milk<sup>1</sup>
       </div>
       <!-- <div id="my-img2"></div> -->
       <div class="my-images-page6" id="my-images-page6">
@@ -128,7 +126,16 @@
             enableobserver: false,
           });
         });
-        $("#my-img1").swipe({
+        // $("#my-img1").swipe({
+        //   swipeLeft: function (event, direction, distance, duration, fingerCount) {
+        //     window.location = "slide7.html";
+        //   },
+        //   swipeRight: function (event, direction, distance, duration, fingerCount) {
+        //     window.location = "slide5.html";
+        //   },
+        // });
+        // if (window.matchMedia("(min-width: 992px)").matches) {
+        $("#Main_Container").swipe({
           swipeLeft: function (event, direction, distance, duration, fingerCount) {
             window.location = "slide7.html";
           },
@@ -136,16 +143,7 @@
             window.location = "slide5.html";
           },
         });
-        if (window.matchMedia("(min-width: 992px)").matches) {
-          $("#Main_Container").swipe({
-            swipeLeft: function (event, direction, distance, duration, fingerCount) {
-              window.location = "slide7.html";
-            },
-            swipeRight: function (event, direction, distance, duration, fingerCount) {
-              window.location = "slide5.html";
-            },
-          });
-        }
+        // }
       });
     </script>
     <script src="./js/index.js"></script>
