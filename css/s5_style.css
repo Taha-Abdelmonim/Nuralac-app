@@ -169,12 +169,15 @@ body {
   position: absolute;
   top: 177px;
   left: 212px;
+  width: 56%;
+  border: 2px solid #25abda;
+  border-radius: 10px;
 }
 
 #img5 {
   position: absolute;
   top: 297px;
-  left: 809px;
+  left: 789px;
 }
 
 /* End Main Slide  */
