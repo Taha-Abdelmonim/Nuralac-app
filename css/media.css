@@ -95,7 +95,7 @@
     position: absolute;
     background-size: 100%;
     left: 4%;
-    top: 20%;
+    top: 11%;
     height: 51px;
     width: 80%;
     z-index: 1;
@@ -111,7 +111,7 @@
     width: 94%;
     overflow: hidden;
     left: 5px;
-    bottom: 13.5%;
+    bottom: 16.5%;
     z-index: 1;
     font-size: 10px;
     line-height: 1.3;
@@ -132,7 +132,7 @@ body {
   }
 
   body {
-    height: 120vh;
+    height: 100vh;
     width: 100vw;
     position: relative;
   }
@@ -223,7 +223,7 @@ body #Main_Container .logo img {
   body .page2 .my-analysis-circle {
     position: absolute;
     width: 100%;
-    top: 22%;
+    top: 12%;
     height: 50vh;
     overflow-y: scroll;
   }
@@ -288,7 +288,7 @@ body .page2 .my-analysis-circle .con1 div:nth-of-type(2) {
     position: absolute;
     height: 50vh;
     width: 100%;
-    top: 25%;
+    top: 20%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -387,7 +387,7 @@ body .page3 .my-images-page3 div:nth-of-type(3) img {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 22%;
+    top: 18%;
     width: 100vw;
   }
   body .page5 .my-images-page5 img:nth-of-type(1) {
@@ -415,7 +415,7 @@ body .page3 .my-images-page3 div:nth-of-type(3) img {
   }
   body .page6 .my-images-page6 {
     position: absolute;
-    top: 27%;
+    top: 18%;
     left: 0%;
     display: flex;
     flex-direction: column;
@@ -443,7 +443,7 @@ body .page3 .my-images-page3 div:nth-of-type(3) img {
   }
   body .page6 #my-img7 {
     position: absolute;
-    bottom: 28.8%;
+    bottom: 33%;
     left: 50%;
     transform: translateX(-50%);
     width: 60%;
@@ -613,7 +613,7 @@ body .page9 .images-page9 {
   }
   body .page11 .my-images-page11 {
     position: absolute;
-    top: 23%;
+    top: 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -662,7 +662,7 @@ body .page9 .images-page9 {
 
   body {
     overflow-y: scroll;
-    height: 120vh !important;
+    height: 100vh !important;
   }
   body::before {
     bottom: 16%;
@@ -755,7 +755,7 @@ body .page9 .images-page9 {
     line-height: 1.2;
   }
   .page2 .text-footer {
-    bottom: 12.5% !important;
+    bottom: 8.5% !important;
   }
   .page2 .my-analysis-circle {
     overflow: hidden !important;
@@ -827,9 +827,10 @@ body .page9 .images-page9 {
     top: 1% !important;
   }
   .page3 .text-footer {
-    bottom: 14.5%;
+    bottom: 15.5%;
   }
   .page3 .my-images-page3 {
+    height: 16vh !important;
     flex-direction: row !important;
     top: 28% !important;
   }
@@ -864,6 +865,7 @@ body .page9 .images-page9 {
     flex-direction: row !important;
     justify-content: center;
     align-items: center;
+    top: 30% !important;
   }
   .page5 .my-images-page5 img:nth-of-type(1) {
     width: 50% !important;
@@ -880,7 +882,7 @@ body .page9 .images-page9 {
     font-size: 26px !important;
   }
   .page6 .text-footer {
-    bottom: 7.5% !important;
+    bottom: 15% !important;
   }
   .page6 #my-img2 {
     background: url(../images/s6/text5.png) no-repeat !important;
@@ -910,7 +912,7 @@ body .page9 .images-page9 {
   }
 
   .page7 .text-footer {
-    bottom: 6.5% !important;
+    bottom: 15% !important;
   }
   .page7 #my-img1 {
     top: 1% !important;
@@ -965,7 +967,7 @@ body .page9 .images-page9 {
   }
 
   .page8 .text-footer {
-    bottom: 9.5% !important;
+    bottom: 15% !important;
   }
   .page8 #my-img1 {
     top: 0% !important;
@@ -1006,7 +1008,7 @@ body .page9 .images-page9 {
   }
 
   .page9 .text-footer {
-    bottom: 6.5% !important;
+    bottom: 15% !important;
   }
   .page9 .button2 {
     display: block !important;
@@ -1058,7 +1060,7 @@ body .page9 .images-page9 {
   }
 
   .page10 .text-footer {
-    bottom: 6.5% !important;
+    bottom: 15% !important;
   }
   .page10 #my-img1 {
     top: 1% !important;
