@@ -118,6 +118,16 @@ body #Main_Container .logo {
     overflow-x: hidden !important;
     height: calc(100vh - 55px) !important;
   }
+  body #Main_Container::after {
+    content: "";
+    position: absolute;
+    background: url(../images/s1/img5.png) no-repeat;
+    background-size: 106%;
+    width: 130px;
+    height: 70px;
+    right: 0;
+    top: -2px;
+  }
   body #Main_Container::before {
     background: url(../images/s1/linksHome.png) no-repeat;
   }

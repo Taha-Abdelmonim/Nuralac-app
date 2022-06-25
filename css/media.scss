@@ -131,7 +131,7 @@
     position: absolute;
     z-index: 1;
     overflow: hidden;
-    top: 9.5%;
+    top: 0%;
     height: 90px;
     left: 0;
     color: white;
@@ -187,7 +187,7 @@
       position: absolute;
       width: 100%;
       height: 80px;
-      top: 10%;
+      top: 0;
       // background: linear-gradient(to right, #105fb9 22%, #1e88e5 44%, #2196f3 66%, #90caf9 97%, #e3f2fd 100%);
       background: linear-gradient(
         90deg,
@@ -205,16 +205,6 @@
       // background-size: 100%;
       height: 100% !important;
       width: 100% !important;
-      &::after {
-        content: "";
-        position: absolute;
-        background: url(../images/s1/img5.png) no-repeat;
-        background-size: 106%;
-        width: 130px;
-        height: 70px;
-        right: 0;
-        top: -2px;
-      }
       &::before {
         content: "";
         position: absolute;
@@ -346,7 +336,7 @@
     }
     .page3 {
       .text-global {
-        top: 11.5%;
+        top: 1%;
         font-size: 16px;
       }
       .images-page3 {
@@ -383,7 +373,7 @@
         display: none;
       }
       .text-global {
-        top: 11%;
+        top: 0%;
       }
       .images-page4 {
         display: none;
@@ -433,13 +423,13 @@
     .page5 {
       .text-global-2 {
         line-height: 1;
-        top: 22%;
+        top: 12%;
       }
       .images-page5 {
         display: none;
       }
       #my-img1 {
-        top: 10.7%;
+        top: 1%;
         font-size: 17px;
       }
       #my-img2 {
@@ -454,7 +444,7 @@
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 29%;
+        top: 22%;
         width: 100vw;
         img:nth-of-type(1) {
           border-radius: 10px;
@@ -474,9 +464,7 @@
       .text-global-2 {
         line-height: 1.2;
       }
-      #my-img1 {
-        top: 10%;
-      }
+
       #my-img2 {
         background: url(../images/s6/text2.png) no-repeat;
         position: absolute;
@@ -537,7 +525,7 @@
         display: none;
       }
       #my-img1 {
-        top: 10.4%;
+        top: 0%;
       }
       .my-images-page7 {
         display: grid;
@@ -627,8 +615,6 @@
       .images-page9 {
         display: none;
       }
-      #my-img1 {
-      }
       .my-images-page9 {
         position: relative;
         height: 50vh;
@@ -663,7 +649,7 @@
         display: none;
       }
       #my-img1 {
-        top: 10.7%;
+        top: 1%;
       }
       .my-images-page10 {
         display: grid;
@@ -713,7 +699,7 @@
         display: none;
       }
       #my-img1 {
-        top: 8.5%;
+        top: -1%;
         line-height: 1.2;
       }
       .my-images-page11 {
@@ -744,7 +730,7 @@
         display: none;
       }
       #my-img1 {
-        top: 10.3%;
+        top: 0%;
       }
       .my-images-page12 {
         position: absolute;
@@ -775,28 +761,13 @@
     &::before {
       bottom: 16%;
     }
-    &::after {
-      top: 3%;
-    }
     #Main_Container {
-      &::after {
-        top: 3px !important;
-        background-size: 102% 97% !important;
-        z-index: 1;
-        height: 100px !important;
-      }
       &::before {
         background-size: 100% 100% !important;
         left: 50% !important;
         transform: translateX(-50%);
         width: 340px !important;
         bottom: 0;
-      }
-      #full-screen {
-        top: 30% !important;
-        left: auto !important;
-        right: 2%;
-        width: 5% !important;
       }
       .logo {
         bottom: -35px;
@@ -862,7 +833,7 @@
     left: 2% !important;
     max-width: 80% !important;
     font-size: 19px !important;
-    top: 4% !important;
+    top: 0 !important;
   }
   .text-global-2 {
     top: 10% !important;
@@ -896,24 +867,33 @@
   }
   .page2 {
     .text-global {
-      top: 3.2% !important;
       line-height: 1.2;
     }
     .text-footer {
       bottom: 12.5% !important;
     }
     .my-analysis-circle {
-      overflow-y: clip !important;
-      overflow-x: scroll;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
+      overflow: hidden !important;
+      height: auto !important;
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: center;
+      align-items: space-around;
       width: 100% !important;
-      height: 42vh !important;
-      top: 27% !important;
+      top: 16% !important;
+      .con-main {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 20vh;
+      }
+      .con2 {
+        margin-right: 3%;
+      }
       .con2,
       .con1 {
         height: 115px !important;
+        flex-grow: 1;
         img {
           width: 60% !important;
           flex-basis: 33%;
@@ -933,31 +913,29 @@
       }
       .my-analysis {
         margin-top: 6px !important;
-        margin-left: 0 !important;
-        position: absolute !important;
+        position: unset !important;
         right: -92%;
-        width: 66% !important;
+        width: 99% !important;
         height: 100%;
 
         #my-img3 {
-          width: 64% !important;
+          width: 99% !important;
           height: 94% !important;
           margin-top: 1% !important;
         }
         #my-img4 {
-          width: 63% !important;
-          height: 90% !important;
-          margin-top: 1% !important;
+          width: 94% !important;
+          margin-left: 2%;
+          height: 62% !important;
+          margin-top: 36% !important;
         }
         #my-mask {
-          width: 62% !important;
-          height: 72% !important;
-          left: 1%;
-          top: 0% !important;
+          width: 92% !important;
+          height: 42% !important;
+          left: 3%;
+          top: 39.7% !important;
           #my-img5 {
             width: 88% !important;
-            height: 90%;
-            top: 7%;
           }
         }
       }
@@ -965,7 +943,7 @@
   }
   .page3 {
     .text-global {
-      // top: 4.5% !important;
+      top: 1% !important;
     }
     .text-global-2 {
     }
@@ -982,6 +960,9 @@
     }
   }
   .page4 {
+    .text-global {
+      top: 1% !important;
+    }
     #img1 {
       background: url(../images/s4/text2.png) no-repeat !important;
       top: 4% !important;
@@ -999,8 +980,7 @@
       bottom: 10.5%;
     }
     #my-img1 {
-      top: 3% !important;
-      max-width: 80% !important;
+      max-width: 99% !important;
       line-height: 1.1;
     }
     .my-images-page5 {
@@ -1026,9 +1006,7 @@
     .text-footer {
       bottom: 7.5% !important;
     }
-    #my-img1 {
-      top: 3.4% !important;
-    }
+
     #my-img2 {
       background: url(../images/s6/text5.png) no-repeat !important;
       top: 24.5% !important;
@@ -1063,7 +1041,7 @@
       bottom: 6.5% !important;
     }
     #my-img1 {
-      top: 4% !important;
+      top: 1% !important;
     }
     .my-images-page7 {
       top: 32% !important;
@@ -1124,7 +1102,7 @@
       bottom: 9.5% !important;
     }
     #my-img1 {
-      top: 3.5% !important;
+      top: 0% !important;
     }
     .my-images-page8 {
       transform: scale(2);
@@ -1171,7 +1149,7 @@
     }
     #my-img1 {
       display: block !important;
-      top: 3.5% !important;
+      top: 0% !important;
     }
     .button2 {
       position: absolute;
@@ -1222,7 +1200,7 @@
       bottom: 6.5% !important;
     }
     #my-img1 {
-      top: 4% !important;
+      top: 1% !important;
     }
     .my-images-page10 {
       display: flex !important;
@@ -1288,7 +1266,7 @@
   }
   .page11 {
     #my-img1 {
-      top: 3% !important;
+      top: 0% !important;
       line-height: 1;
     }
     .my-images-page11 {
@@ -1305,7 +1283,7 @@
   }
   .page12 {
     #my-img1 {
-      top: 3.7% !important;
+      top: 0% !important;
     }
     .my-images-page12 {
       flex-direction: row !important;
