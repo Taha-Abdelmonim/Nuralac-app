@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nuralac_Detailer_First_Release</title>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="css animation, animation, css3, webkit, mozilla, w3c, dan eden, @_dte, animated, animate.css, dan eden" />
+    <meta name="viewport" content="initial-scale = 1.0, user-scalable = yes, maximum-scale = 2.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <!-- Css files -->
+    <link rel="stylesheet" href="css/s5_style.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <!-- JS files -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/s5_links.js"></script>
+    <script type="text/javascript" src="js/insert.js"></script>
+    <script type="text/javascript" src="js/swip/jquery-ui-1.9.2.custom.min.js"></script>
+    <script type="text/javascript" src="js/swip/jquery.touchSwipe.js"></script>
+    <script type="text/javascript" src="js/swip/jquery.touchSwipe.min.js"></script>
+    <script type="text/javascript" src="js/fit.js"></script>
+
+    <script type="text/javascript" id="customs-js">
+      $(document).ready(function () {
+        $("#img1").insert("drawLine", "0", "6");
+        $("#img2").insert("drawLine", "3", "5");
+        $("#img3").insert("fadeIn", "5", "1");
+        $("#img4").insert("fadeIn", "6", "1");
+        $("#img5").insert("fadeInRight", "7", "1");
+        // my images
+        $("#my-img1").insert("drawLineHeight", "0", "6");
+        $("#text-global-2").insert("drawLine", "3", "5");
+        $("#my-img3").insert("fadeIn", "5", "1");
+        $("#my-img4").insert("fadeIn", "6", "1");
+      });
+    </script>
+    <link rel="stylesheet" href="./css/media.css" />
+  </head>
+  <body>
+    <div id="Main_Container" class="page5">
+      <!-- main slide -->
+      <div class="back-header">
+        <div
+          class="text-global"
+          id="my-img1"
+          class="text-global"
+          data-text="Healthy nutrition during early life is a key factor for proper immune development<sup>1</sup>"
+        >
+          Healthy nutrition during early life is a key factor for proper immune development<sup>1</sup>
+        </div>
+      </div>
+      <div
+        id="text-global-2"
+        class="text-global-2"
+        data-text="Infants’ immature immune system renders them more susceptible to infections.<sup>2</sup>"
+      >
+        Infants’ immature immune system renders <br />them more susceptible to infections.<sup>2</sup>
+      </div>
+
+      <!-- tabs -->
+      <div class="no-links">
+        <a href="index.html"> <div id="home"></div></a>
+        <a href="slide2.html"> <div id="div1"></div></a>
+        <a href="slide5.html"> <div id="div2"></div></a>
+        <a href="slide8.html"> <div id="div3"></div></a>
+        <a href="slide11.html"> <div id="div4"></div></a>
+        <a href="slide12.html"> <div id="div5"></div></a>
+      </div>
+      <!-- end of tabs -->
+
+      <div class="images-page5">
+        <div id="img1"></div>
+        <div id="img2"></div>
+        <img id="img3" src="images/s5/img3.png" />
+        <img id="img4" src="images/s5/img4.png" />
+        <img id="img5" src="images/s5/img5.png" />
+      </div>
+
+      <!-- <div id="my-img2"></div> -->
+      <div class="my-images-page5">
+        <img id="my-img3" src="images/s5/img4.png" />
+        <img id="my-img4" src="images/s5/back-text.png" />
+      </div>
+      <div class="text-footer">
+        1. Renz H, Adkins BD, Bartfeld S, et al. The neonatal window of opportunity—early priming for life.
+        <i>J Allergy Clin Immunol.</i> 2018;141(4):1212-1214. <br />
+        2. Children’s immature immune systems threatened by increasing ‘superbugs’. WHO. Available at:
+        https://www.who.int/news-room/commentaries/detail/children-s-immature-immune-systems-threatened-by-increasing-superbugs. Last accessed:
+        6/4/2022. <br />
+        3. Torow N, Hornef MW. The Neonatal Window of Opportunity: Setting the Stage for Life-Long Host-Microbial Interaction and Immune Homeostasis.
+        <i>J Immunol.</i> 2017;198(2):557-563.
+      </div>
+      <footer class="footer">
+        <div class="icon-logo">
+          <div class="logo">
+            <img id="img-logo1" class="img-logo1" src="images/s1/img1.png" />
+            <img id="img-logo2" class="img-logo2" src="images/s1/img2.png" />
+            <div id="img-logo3" class="img-logo3"></div>
+            <img id="img-logo4" class="img-logo4" src="images/s1/img4.png" />
+          </div>
+          <div class="main-icon"><img src="./images/s1/img6.png" alt="" /></div>
+        </div>
+        <div class="footer-image-links">
+          <img src="./images/s5/footer.png" alt="" />
+          <div class="links">
+            <a href="index.html"></a>
+            <a href="slide2.html"></a>
+            <a href="slide5.html"></a>
+            <a href="slide8.html"></a>
+            <a href="slide11.html"></a>
+            <a href="slide12.html"></a>
+          </div>
+        </div>
+      </footer>
+      <!-- main slide -->
+    </div>
+    <script type="application/javascript">
+      $(document).ready(function (e) {
+        // $("#my-img1").swipe({
+        //   swipeLeft: function (event, direction, distance, duration, fingerCount) {
+        //     window.location = "slide6.html";
+        //   },
+        //   swipeRight: function (event, direction, distance, duration, fingerCount) {
+        //     window.location = "slide4.html";
+        //   },
+        // });
+        // if (window.matchMedia("(min-width: 992px)").matches) {
+        $("#Main_Container").swipe({
+          swipeLeft: function (event, direction, distance, duration, fingerCount) {
+            window.location = "slide6.html";
+          },
+          swipeRight: function (event, direction, distance, duration, fingerCount) {
+            window.location = "slide4.html";
+          },
+        });
+        // }
+      });
+    </script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
